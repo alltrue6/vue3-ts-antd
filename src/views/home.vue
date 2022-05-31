@@ -2,17 +2,17 @@
     <div class="menu">
         <a-menu v-model:openKeys="openKeys" v-model:selectedKeys="selectedKeys" style="width: 256px;height: 100vh;;"
             mode="inline" :theme="theme">
-            <a-menu-item key="1" @click="test">
+            <a-menu-item key="1" @click="test(1)">
                 <template #icon>
                     <MailOutlined />
                 </template>
                 去tset
             </a-menu-item>
-            <a-menu-item key="2">
+            <a-menu-item key="2" @click="test(2)">
                 <template #icon>
                     <CalendarOutlined />
                 </template>
-                Navigation Two
+                去登陆
             </a-menu-item>
             <a-sub-menu key="sub1">
                 <template #icon>
@@ -62,8 +62,12 @@ export default defineComponent({
             selectedKeys: ['1'],
             openKeys: ['sub1'],
         });
-        const test=()=>{
-           router.push('/test')
+        const test = (type: Number) => {
+            if (type==1) {
+                router.push('/test')
+            }else{
+                 router.push('/Login')
+            }
         }
         return {
             ...toRefs(state),
@@ -74,10 +78,10 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.menu{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column; 
+.menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 </style>

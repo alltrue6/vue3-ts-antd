@@ -18,12 +18,12 @@
                 <template #icon>
                     <AppstoreOutlined />
                 </template>
-                <template #title>Navigation Three</template>
-                <a-menu-item key="3">Option 3</a-menu-item>
-                <a-menu-item key="4">Option 4</a-menu-item>
-                <a-sub-menu key="sub1-2" title="Submenu">
-                    <a-menu-item key="5">Option 5</a-menu-item>
-                    <a-menu-item key="6">Option 6</a-menu-item>
+                <template #title>EVA</template>
+                <a-menu-item key="3">凌波丽</a-menu-item>
+                <a-menu-item key="4">明日香</a-menu-item>
+                <a-sub-menu key="sub1-2" title="没想好">
+                    <a-menu-item key="5">没头脑</a-menu-item>
+                    <a-menu-item key="6">不高兴</a-menu-item>
                 </a-sub-menu>
             </a-sub-menu>
             <a-sub-menu key="sub2">

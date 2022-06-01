@@ -6,7 +6,7 @@
                 <template #icon>
                     <MailOutlined />
                 </template>
-                去tset
+                看看echarts
             </a-menu-item>
             <a-menu-item key="2" @click="test(2)">
                 <template #icon>
@@ -78,10 +78,4 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.menu {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
 </style>

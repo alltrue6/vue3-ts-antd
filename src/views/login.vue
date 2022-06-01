@@ -1,14 +1,14 @@
 <script lang='ts' setup>
 import { ref } from 'vue'
 import { HomeService } from "../api/index";
-const user = ref<string>('');
-const password = ref<string>('');
+const user = ref();
+const password = ref();
 const Login = async () => {
-    let data = {
+    const data = {
         password: password.value,
         user: user.value
-    }    
-    const res = await HomeService.Login(JSON.stringify(data))
+    }
+    const res = await HomeService.Login(data)
 }
 
 </script>

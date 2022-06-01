@@ -57,8 +57,6 @@ export default defineComponent({
         SettingOutlined,
     },
     setup() {
-        console.log(import.meta.env,'import.meta.env.VITE_BASE_URL');
-        
         const state = reactive({
             theme: 'dark' as MenuTheme,
             selectedKeys: ['1'],
@@ -68,7 +66,7 @@ export default defineComponent({
             if (type==1) {
                 router.push('/test')
             }else{
-                 router.push('/Login')
+                router.push('/Login')
             }
         }
         return {

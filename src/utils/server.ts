@@ -52,8 +52,8 @@ const service = axios.create({
   withCredentials: true,
   timeout: 30000,
   transformRequest: [(data) => {
-
-    // data = JSON.stringify(data)
+    //如果formdata请求注释
+    data = JSON.stringify(data)
 
     return data
   }],

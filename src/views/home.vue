@@ -30,11 +30,11 @@
                 <template #icon>
                     <SettingOutlined />
                 </template>
-                <template #title>Navigation Four</template>
-                <a-menu-item key="7">Option 7</a-menu-item>
-                <a-menu-item key="8">Option 8</a-menu-item>
-                <a-menu-item key="9">Option 9</a-menu-item>
-                <a-menu-item key="10">Option 10</a-menu-item>
+                <template #title>六一儿童节</template>
+                <a-menu-item key="7">六月二</a-menu-item>
+                <a-menu-item key="8">端午节</a-menu-item>
+                <a-menu-item key="9">三天假</a-menu-item>
+                <a-menu-item key="10">上班了emo</a-menu-item>
             </a-sub-menu>
         </a-menu>
     </div>

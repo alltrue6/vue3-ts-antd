@@ -1,5 +1,5 @@
 <script lang='ts' setup>
-import { ref, reactive } from 'vue'
+import { ref } from 'vue'
 import { HomeService } from "../api/index";
 const user = ref<string>('');
 const password = ref<string>('');
@@ -7,9 +7,7 @@ const Login = async () => {
     let data = {
         password: password.value.toString(),
         user: user.value
-    }
-    console.log(data);
-
+    }    
     const res = await HomeService.Login(JSON.stringify(data))
 }
 

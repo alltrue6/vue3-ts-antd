@@ -57,6 +57,8 @@ export default defineComponent({
         SettingOutlined,
     },
     setup() {
+        console.log(import.meta.env,'import.meta.env.VITE_BASE_URL');
+        
         const state = reactive({
             theme: 'dark' as MenuTheme,
             selectedKeys: ['1'],

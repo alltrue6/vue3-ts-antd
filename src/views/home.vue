@@ -63,9 +63,9 @@ export default defineComponent({
             openKeys: ['sub1'],
         });
         const test = (type: Number) => {
-            if (type==1) {
+            if (type == 1) {
                 router.push('/test')
-            }else{
+            } else {
                 router.push('/Login')
             }
         }
